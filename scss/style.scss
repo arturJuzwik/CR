@@ -1,0 +1,233 @@
+/*variables*/
+$border-color:#1B2B3B;
+/*end of variables*/
+/*mixins*/
+@mixin font-basic($size){
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: $size;
+	
+}
+@mixin inliner{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+/*end of mixins*/
+html,body{
+	@include font-basic(1em);
+}
+ul,li{
+	list-style-type:none;
+	padding:0;
+	margin-bottom:0;
+}
+/*bootstrap overwriting*/
+/*end of bootstrap overwriting*/
+.row{
+	margin:0;
+}
+/*login section*/
+.login{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/login-background.jpg');
+	background-size: cover;
+	background-image: no-repeat;
+}
+/*end of login section*/
+/*feature section*/
+.features{
+	margin: 0 1px 0 1px;
+	padding: 100px 10% 120px 10%;
+
+}
+.feature{
+	margin: 20px 0 0 0;
+	
+	&-icon{
+		@include inliner;
+		margin: 0 0 20px 0;
+		font-size: 50px;
+		color: #1b2a3e;
+		transition: color .5s linear;
+		&:hover{
+			color: #6d5e5e;
+			transition: color .5s linear;
+		}
+	}
+	&-title{
+		@include inliner;
+		font-size:28px;
+		margin: 0 0 20px 0;
+		text-transform: capitalize;
+	}
+	&-description{
+		@include inliner;
+		font-size: 16px;
+	}
+}
+/*end of feature section*/
+/*screens section*/
+.screens{
+	-webkit-box-shadow: 0px 0px 2px 2px rgba(27,42,62,1);
+	-moz-box-shadow: 0px 0px 2px 2px rgba(27,42,62,1);
+	box-shadow: 0px 0px 2px 2px rgba(27,42,62,1);
+	padding:100px 0 120px 0;
+	>.row{
+		margin-bottom:40px;
+	}
+	&-description{
+	@media (min-width:0) and (max-width:1100px){
+				
+				margin-bottom:30px;
+			}
+	}
+	&-description-title{
+		margin:50px 0 20px 0;
+		font-weight: bold;
+		@media (min-width:0) and (max-width:1199px){
+			text-align: center;
+		}
+	}
+	&-description-paragraph{
+		margin:0 0 20px 0;
+		padding:5px;
+
+		@media (min-width:0) and (max-width:1199px){
+			width:100%;
+		}
+	}
+	&-description-list{
+		@extend .screens-description-paragraph;
+		padding:0;
+		height:50px;
+		&-arrow{
+			color:#6d5e5e;
+		}
+	}
+	&-screen{
+		padding:0;
+		@media (min-width:0) and (max-width:1199px){
+				display:block;
+				margin:0 auto;
+		}
+		>img{
+			width:90%;
+			@media (min-width:0) and (max-width:1199px){
+				display:block;
+				margin:0 auto;
+			}
+		}
+	}
+}
+.screens-flex-left{
+	    display:flex;
+    flex-wrap:wrap;
+}
+.screens-flex-order{
+
+	@media (min-width:0) and (max-width:1199px){
+	order:1;
+	}
+}
+/*end of screens section*/
+/*section:payment*/
+.payment{
+	padding: 100px 0 120px 0;
+	&-title{
+		width:100%;
+		text-align:center;
+		margin:0 0 20px 0;
+	}
+	&-paragraph{
+		@extend .payment-title;
+		margin:0 0 50px 0;
+		&:after{
+			content:" ";
+			width:100px;
+			border-bottom:1px solid #1b2a3e;
+			display:block;
+			margin: 30px auto auto auto;
+			
+		}
+	}
+	&-type{
+		margin:0 0 30px 0;
+		@media (min-width:0) and (max-width:992px){
+			width:80%;
+			display:block;
+			margin:0 auto 30px auto;
+		}
+		ul>li{
+		padding:0;	
+		border-bottom:1px solid #6d5e5e;
+		border-left:1px solid #6d5e5e;
+		border-right:1px solid #6d5e5e;
+		text-align: center;
+		line-height: 50px;
+		}
+	}
+	&-cost{
+		width:100%;
+		height:160px;
+		background-color:#1b2a3e;
+		&-title{
+			color:white;
+			font-size:50px;
+			text-transform: uppercase;
+			margin:0;
+			text-align: center;
+			padding:25px 0 15px 0;
+
+		}
+		&-description{
+			@include inliner;
+			text-transform: capitalize;
+			color:white;
+			margin:0;
+			font-size:24px;
+			font-weight: 300;
+			
+		}
+	}
+	&-currency, &-period{
+		font-size:16px;
+		font-weight: 300;
+	}
+	&-holder{
+		height:100px;
+		background-color:#1b2a3e;
+		&-button{
+			display:block;
+			margin:0 auto;
+			position:relative;
+			top:25%;
+			width:50%;
+			height:50px;
+			border:1px solid black;
+			background:white;
+			text-transform: uppercase;
+		}
+	}
+}
+/*end of section:payment*/
+/*section:opinions*/
+.opinions{
+	background-color:#1b2a3e;
+	padding:100px 10% 120px 10%;
+	&-holder{
+		background-color:white;
+		border-radius:5px;
+		padding:20px;
+		height:auto;
+		
+////		margin:10px;
+//		&-paragraph{
+//			width:100%;
+//			margin:0;
+//		}
+	}
+	
+}
+/*end of section: opinions*/
