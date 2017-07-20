@@ -1,0 +1,80 @@
+/*section:payment*/
+.payment{
+	padding: 100px 0 120px 0;
+	&-title{
+		width:100%;
+		text-align:center;
+		margin:0 0 20px 0;
+	}
+	&-paragraph{
+		@extend .payment-title;
+		margin:0 0 50px 0;
+		&:after{
+			content:" ";
+			width:100px;
+			border-bottom:1px solid #1b2a3e;
+			display:block;
+			margin: 30px auto auto auto;
+			
+		}
+	}
+	&-type{
+		margin:0 0 30px 0;
+		@media (min-width:0) and (max-width:992px){
+			width:80%;
+			display:block;
+			margin:0 auto 30px auto;
+		}
+		ul>li{
+		padding:0;	
+		border-bottom:1px solid #6d5e5e;
+		border-left:1px solid #6d5e5e;
+		border-right:1px solid #6d5e5e;
+		text-align: center;
+		line-height: 50px;
+		}
+	}
+	&-cost{
+		width:100%;
+		height:160px;
+		background-color:#1b2a3e;
+		&-title{
+			color:white;
+			font-size:50px;
+			text-transform: uppercase;
+			margin:0;
+			text-align: center;
+			padding:25px 0 15px 0;
+
+		}
+		&-description{
+			@include inliner;
+			text-transform: capitalize;
+			color:white;
+			margin:0;
+			font-size:24px;
+			font-weight: 300;
+			
+		}
+	}
+	&-currency, &-period{
+		font-size:16px;
+		font-weight: 300;
+	}
+	&-holder{
+		height:100px;
+		background-color:#1b2a3e;
+		&-button{
+			display:block;
+			margin:0 auto;
+			position:relative;
+			top:25%;
+			width:50%;
+			height:50px;
+			border:1px solid black;
+			background:white;
+			text-transform: uppercase;
+		}
+	}
+}
+/*end of section:payment*/

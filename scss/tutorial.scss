@@ -1,0 +1,41 @@
+/*section:tutorial*/
+.tutorial{
+	padding:100px 10% 120px 10%;
+	&-title{
+		@extend .payment-title;
+	}
+	&-paragraph{
+		width:100%;
+		text-align:center;
+		margin:0 0 20px 0;
+		&:after{
+			content:" ";
+			width:100px;
+			border-bottom:1px solid #1b2a3e;
+			display:block;
+			margin: 30px auto auto auto;
+		}
+	}
+	&-box{
+		&-title{
+			margin:20px 0 10px 0;
+		}
+		&-paragraph{
+			font-size:14px;
+			line-height: 26px;
+			margin:0 0 20px 0;
+			
+		}
+		&-number{
+			display:block;
+			height:90px;
+			position:absolute;
+			left:10px;
+			bottom:30px;
+			font-size:90px;
+			opacity:0.1;
+			color:#1b2a3e;
+		}
+	}
+}
+/*end of section: tutorial*/

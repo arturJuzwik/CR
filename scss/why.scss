@@ -1,0 +1,47 @@
+/*section:why*/
+.why{
+	background-image:url("http://bootstraplovers.com/bootstrap4/saas2.0/html/assets/images/bg2.jpg");
+	min-height:500px;
+	background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+	padding:100px 8% 120px 8%;
+	color:white;
+	&-title{
+		@extend .payment-title;
+		font-size:35px;
+	}
+	&-paragraph{
+		width:100%;
+		text-align:center;
+		margin:0 0 20px 0;
+		&:after{
+			content:" ";
+			width:100px;
+			border-bottom:1px solid #ffffff;
+			display:block;
+			margin: 30px auto auto auto;
+		}
+	}
+	&-item{
+		margin: 0 0 50px 0;
+	}
+	&-icon{
+		display:block;
+		float:left;
+
+		font-size:50px;
+	}
+
+	&-holder-title{
+		margin:0 0 15px 0;
+		padding-left:90px;
+	}
+	&-holder-paragraph{
+		padding-left:90px;
+		font-size:14px;
+		font-weight: 300;
+	}
+}
+/*end of section: why*/
