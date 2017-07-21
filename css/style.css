@@ -19,24 +19,98 @@ ul, li {
 /*login section*/
 .login {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/login-background.jpg");
   background-size: cover;
-  background-image: no-repeat; }
+  background-image: no-repeat;
+  padding: 90px 0 60px 0;
+  display: flex;
+  justify-content: center; }
+  .login-title {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px; }
+    .login-form-icon {
+      font-size: 35px;
+      color: white;
+      display: inline-block;
+      position: relative;
+      width: 50px;
+      top: 16px;
+      left: 20px;
+      z-index: 9999999; }
+      .login-form-icon-remove {
+        float: right;
+        left: 3px;
+        top: -80px;
+        font-size: 20px;
+        color: transparent;
+        width: 30px;
+        height: 100%; }
+    .login-form-text, .login-form-password {
+      width: 350px;
+      height: 51px;
+      background: none;
+      padding: 0 0 0 55px;
+      border: none;
+      display: block;
+      margin: 0 auto 0 10px;
+      position: relative;
+      top: -30px;
+      color: white; }
+    .login-form:focus {
+      outline: transparent;
+      background: #1b2a3e;
+      /* Old browsers */
+      background: -webkit-linear-gradient(left, #1b2a3e 14%, #6d5e5e 51%, #8d7e7e 89%);
+      background: -o-linear-gradient(left, #1b2a3e 14%, #6d5e5e 51%, #8d7e7e 89%);
+      background: linear-gradient(to right, #1b2a3e 14%, #6d5e5e 51%, #8d7e7e 89%); }
+    .login-form-links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px; }
+      .login-form-links > a {
+        color: white; }
+  .login-form-button {
+    height: 70px;
+    background: none;
+    border: 2px solid white;
+    font-size: 24px;
+    color: white; }
+
+.input-label-one, .input-label-two {
+  height: 70px !important;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white; }
+
+.checkbox-label {
+  height: 30px !important;
+  color: white; }
+  .checkbox-label-one {
+    margin-top: 20px !important; }
+  .checkbox-label-two {
+    margin-bottom: 70px !important; }
 
 /*end of login section*/
 /*feature section*/
 .features {
   margin: 0 1px 0 1px;
-  padding: 100px 10% 120px 10%; }
+  padding: 90px 0 60px 0; }
 
 .feature {
-  margin: 20px 0 0 0; }
+  margin: 20px 0 30px 0; }
   .feature-icon {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     font-size: 50px;
     color: #1b2a3e;
     transition: color .5s linear; }
@@ -47,14 +121,15 @@ ul, li {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 28px;
-    margin: 0 0 20px 0;
+    font-size: 24px;
+    margin: 0 0 5px 0;
     text-transform: capitalize; }
   .feature-description {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0 0 15px 0; }
 
 /*end of feature section*/
 /*screens section*/
@@ -62,14 +137,14 @@ ul, li {
   -webkit-box-shadow: 0px 0px 2px 2px #1b2a3e;
   -moz-box-shadow: 0px 0px 2px 2px #1b2a3e;
   box-shadow: 0px 0px 2px 2px #1b2a3e;
-  padding: 100px 0 120px 0; }
+  padding: 90px 0 60px 0; }
   .screens > .row {
     margin-bottom: 40px; }
   @media (min-width: 0) and (max-width: 1100px) {
     .screens-description {
       margin-bottom: 30px; } }
   .screens-description-title {
-    margin: 50px 0 20px 0;
+    margin: 50px 0 5px 0;
     font-weight: bold; }
     @media (min-width: 0) and (max-width: 1199px) {
       .screens-description-title {
@@ -109,7 +184,7 @@ ul, li {
 /*end of screens section*/
 /*section:payment*/
 .payment {
-  padding: 100px 0 120px 0; }
+  padding: 90px 0 60px 0; }
   .payment-title, .payment-paragraph, .opinions-title, .opinions-paragraph, .tutorial-title, .why-title {
     width: 100%;
     text-align: center;
@@ -177,7 +252,7 @@ ul, li {
 /*section:opinions*/
 .opinions {
   background-color: #1b2a3e;
-  padding: 100px 10% 120px 10%; }
+  padding: 90px 0 60px 0; }
   .opinions-title, .opinions-paragraph {
     color: white; }
   .opinions-paragraph {
@@ -233,7 +308,7 @@ ul, li {
 /*end of section: opinions*/
 /*section:tutorial*/
 .tutorial {
-  padding: 100px 10% 120px 10%; }
+  padding: 90px 0 60px 0; }
   .tutorial-paragraph {
     width: 100%;
     text-align: center;
