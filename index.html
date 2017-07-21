@@ -11,14 +11,41 @@
 	</head>
 	<body>
 		<!--section:form-->
-		<section class="login container-fluid">
-			
+		<section class="login container">
+			<div class="row">
+				<h1 class="login-title">
+					c2system
+				</h1>
+				<form class="login-form">
+					<label class=input-label-one>
+						<span class="login-form-icon glyphicon glyphicon-user"></span>	
+						<input class="login-form-text" type="text">
+						<span class="login-form-icon-remove glyphicon glyphicon-remove-sign"></span>
+					</label>
+					<label class="input-label-two">
+						<span class="login-form-icon glyphicon glyphicon-lock"></span>
+						<input class="login-form-password" type="password">
+						<span class="login-form-icon-remove glyphicon glyphicon-remove-sign"></span>
+					</label>
+					<label class="checkbox-label checkbox-label-one">
+						<input type="checkbox">zapamiętaj mnie
+					</label>
+					<label class="checkbox-label checkbox-label-two">
+						<input type="checkbox">bezpieczne logowanie
+					</label>
+					<span class="login-form-links">
+						<a href="#">zarejestruj się&nbsp|</a>
+						<a href="#">&nbspprzypomnij hasło</a>
+					</span>
+					<button class="login-form-button" type="submit">zaloguj</button>
+				</form>
+			</div>
 		</section>
 		<!--end of section: form-->
 		<!--section:main-features-->
-		<section class="features container-fluid">
-			<div class="row ">
-				<div class="feature col-lg-3 col-md-6">
+		<section class="features row">
+			<div class="container">
+				<div class="feature col-md-3 col-sm-6 col-xs-12">
 					<span class="feature-icon glyphicon glyphicon-king"></span>
 					<h2 class="feature-title">
 						cecha produktu
@@ -27,7 +54,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio odio, ultrices et mi.
 					</p>
 				</div>
-				<div class="feature col-lg-3 col-md-6">
+				<div class="feature col-md-3 col-sm-6 col-xs-12">
 					<span class="feature-icon glyphicon glyphicon-apple"></span>
 					<h2 class="feature-title">
 						cecha produktu
@@ -36,7 +63,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio odio, ultrices et mi.
 					</p>
 				</div>
-				<div class="feature col-lg-3 col-md-6">
+				<div class="feature col-md-3 col-sm-6 col-xs-12">
 					<span class="feature-icon glyphicon glyphicon-transfer"></span>
 					<h2 class="feature-title">
 						cecha produktu
@@ -45,7 +72,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio odio, ultrices et mi.
 					</p>
 				</div>
-				<div class="feature col-lg-3 col-md-6">
+				<div class="feature col-md-3 col-sm-6 col-xs-12">
 					<span class="feature-icon glyphicon glyphicon-floppy-disk"></span>
 					<h2 class="feature-title">
 						cecha produktu
@@ -281,77 +308,80 @@
 		</section>
 		<!--end of section: payment-->
 		<!--section:opinions-->
-		<section class="opinions container-fluid">
+		<section class="opinions">
 			<h2 class="opinions-title">
 				True words from our customers.
 			</h2>
 			<p class="opinions-paragraph opinions-paragraph:after">
 				Over 500,000 Customers worldwide
 			</p>
-			<div class="row">	
-				<div class="col-lg-4 col-md-4">
-					<div class="opinions-holder opinions-holder:after">
-						<p class="opinions-holder-paragraph ">
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
-						</p>
-					</div>
-					
-					<div class="opinions-name">
-						<div class="opinions-name-photo">
-							<img alt="" src="img/avtar-1.jpg">
-						</div>
-						<div>
-							<h4 class="opinions-name-header">
-								Imię Nazwisko
-							</h4>
-							<p class="opinions-name-paragraph">
-								firma klienta
-							</p>
-						</div>
-					</div>
-				</div>	
-				<div class="col-lg-4 col-md-4">
-					<div class="opinions-holder">
-						<p class="opinions-holder-paragraph">
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
-						</p>
-					</div>
-					<div class="opinions-name">
-						<div class="opinions-name-photo">
-							<img alt="" src="img/avtar-1.jpg">
-						</div>
-						<div>
-							<h4 class="opinions-name-header">
-								Imię Nazwisko
-							</h4>
-							<p class="opinions-name-paragraph">
-								firma klienta
-							</p>
+			<div class="container">	
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div class="opinions-holder opinions-holder:after">
+								<p class="opinions-holder-paragraph ">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
+								</p>
+							</div>
+
+						<div class="opinions-name">
+							<div class="opinions-name-photo">
+								<img alt="" src="img/avtar-1.jpg">
+							</div>
+							<div>
+								<h4 class="opinions-name-header">
+									Imię Nazwisko
+								</h4>
+								<p class="opinions-name-paragraph">
+									firma klienta
+								</p>
+							</div>
 						</div>
 					</div>
+					<div class="col-lg-4 col-md-4">
+							<div class="opinions-holder opinions-holder:after">
+								<p class="opinions-holder-paragraph ">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
+								</p>
+							</div>
+
+						<div class="opinions-name">
+							<div class="opinions-name-photo">
+								<img alt="" src="img/avtar-1.jpg">
+							</div>
+							<div>
+								<h4 class="opinions-name-header">
+									Imię Nazwisko
+								</h4>
+								<p class="opinions-name-paragraph">
+									firma klienta
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+							<div class="opinions-holder opinions-holder:after">
+								<p class="opinions-holder-paragraph ">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
+								</p>
+							</div>
+
+						<div class="opinions-name">
+							<div class="opinions-name-photo">
+								<img alt="" src="img/avtar-1.jpg">
+							</div>
+							<div>
+								<h4 class="opinions-name-header">
+									Imię Nazwisko
+								</h4>
+								<p class="opinions-name-paragraph">
+									firma klienta
+								</p>
+							</div>
+						</div>
+					</div>	
 				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="opinions-holder">
-						<p class="opinions-holder-paragraph">
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper."
-						</p>
-					</div>
-					<div class="opinions-name">
-						<div class="opinions-name-photo">
-							<img alt="" src="img/avtar-1.jpg">
-						</div>
-						<div>
-							<h4 class="opinions-name-header">
-								Imię Nazwisko
-							</h4>
-							<p class="opinions-name-paragraph">
-								firma klienta
-							</p>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
+			</div>		
 		</section>
 		<!--end of section: opinions-->
 		<!--section:tutorial-->
@@ -362,46 +392,48 @@
 			<p class="tutorial-paragraph">
 				Take a look what the people think about our product
 			</p>
-			<div class="container-fluid">
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<div class="tutorial-box">
-						<h4 class="tutorial-box-title">
-							Create Account.
-						</h4>
-						<p class="tutorial-box-paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
-						</p>
-						<span class="tutorial-box-number">
-							01
-						</span>
+			<div class="container">
+				<div class="row">	
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="tutorial-box">
+							<h4 class="tutorial-box-title">
+								Create Account.
+							</h4>
+							<p class="tutorial-box-paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+							</p>
+							<span class="tutorial-box-number">
+								01
+							</span>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<div class="tutorial-box">
-						<h4 class="tutorial-box-title">
-							Create Account.
-						</h4>
-						<p class="tutorial-box-paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
-						</p>
-						<span class="tutorial-box-number">
-							02
-						</span>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="tutorial-box">
+							<h4 class="tutorial-box-title">
+								Create Account.
+							</h4>
+							<p class="tutorial-box-paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+							</p>
+							<span class="tutorial-box-number">
+								02
+							</span>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<div class="tutorial-box">
-						<h4 class="tutorial-box-title">
-							Create Account.
-						</h4>
-						<p class="tutorial-box-paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
-						</p>
-						<span class="tutorial-box-number">
-							03
-						</span>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="tutorial-box">
+							<h4 class="tutorial-box-title">
+								Create Account.
+							</h4>
+							<p class="tutorial-box-paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+							</p>
+							<span class="tutorial-box-number">
+								03
+							</span>
+						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
 		</section>
 		<!--end of section: tutorial-->
