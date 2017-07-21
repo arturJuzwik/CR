@@ -1,6 +1,6 @@
 /*section:tutorial*/
 .tutorial{
-	padding:100px 10% 120px 10%;
+	@include section-padding;
 	&-title{
 		@extend .payment-title;
 	}

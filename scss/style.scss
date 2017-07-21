@@ -12,6 +12,9 @@ $border-color:#1B2B3B;
 	width: 100%;
 	text-align: center;
 }
+@mixin section-padding{
+	padding: 90px 0 60px 0;
+}
 
 /*end of mixins*/
 html,body{

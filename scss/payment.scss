@@ -1,6 +1,6 @@
 /*section:payment*/
 .payment{
-	padding: 100px 0 120px 0;
+	@include section-padding;
 	&-title{
 		width:100%;
 		text-align:center;

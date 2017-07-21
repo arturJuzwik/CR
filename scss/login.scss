@@ -1,9 +1,105 @@
 /*login section*/
 .login{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url('../img/login-background.jpg');
 	background-size: cover;
 	background-image: no-repeat;
+	@include section-padding;
+	display:flex;
+	justify-content:center;
+	&-title{
+		margin:50px 0 50px 0;
+		text-align: center;
+		color:white;
+		font-size:40px;
+		text-transform: uppercase;
+	}
+	&-form{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+		width:400px;
+		
+		&-icon{
+			font-size:35px;
+			color:white;
+			display:inline-block;
+			position:relative;
+			width:50px;
+			top:16px;
+			left:20px;
+			z-index:9999999;
+			&-remove{
+				float:right;
+				left:3px;
+				top:-80px;
+				font-size:20px;
+				color:transparent;
+				width:30px;
+				height:100%;
+			}
+		}
+		&-text,&-password{
+			width:350px;
+			height:51px;
+			background:none;
+			padding:0 0 0 55px;
+			
+			border:none;
+			display:block;
+			margin:0 auto 0 10px;
+			position:relative;
+			top:-30px;
+			color:white;
+
+			}
+			&:focus{
+//				opacity:1;
+				outline:transparent;
+				background: rgb(27,42,62); /* Old browsers */
+            background: -webkit-linear-gradient(left, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
+            background: -o-linear-gradient(left, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
+            background: linear-gradient(to right, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
+//				transition: opacity .5s ease;
+			}
+	&-links{
+			display:flex;
+			justify-content: center;
+			margin-bottom: 30px;
+			>a{
+				color:white;
+			}
+	}	
+	}
+		
+	
+	&-form-button{
+		height:70px;
+		background:none;
+		border:2px solid white;
+		font-size:24px;
+		color:white;
+	}
 }
+
+
+.input-label-one,.input-label-two{
+	height:70px !important;
+	margin-bottom:30px;
+	border-bottom:1px solid white;
+}
+
+.checkbox-label{
+	height:30px !important;
+	color:white;
+	&-one{
+		margin-top:20px !important;
+	}
+	&-two{
+		margin-bottom:70px !important;
+	}
+
+}
+
 /*end of login section*/
