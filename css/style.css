@@ -16,6 +16,34 @@ ul, li {
 .row {
   margin: 0; }
 
+/*section:navigation*/
+.navigation {
+  padding: 15px 0 15px 0;
+  margin: 0 !important;
+  max-height: 80px;
+  background: white;
+  color: white;
+  z-index: 99; }
+  .navigation-ul > li > a {
+    color: black;
+    padding: 15px 10px;
+    transition: all .5s ease;
+    text-transform: capitalize;
+    text-align: center; }
+    .navigation-ul > li > a:hover, .navigation-ul > li > a:active {
+      background: #7c6e6e !important;
+      color: white !important; }
+
+.navbar-toggle {
+  border: 2px solid black;
+  background: #1b2a3e; }
+  .navbar-toggle .icon-bar {
+    background-color: white !important; }
+
+#navbar-main {
+  background-color: white; }
+
+/*end of section: navigation*/
 /*login section*/
 .login {
   width: 100%;
@@ -45,11 +73,11 @@ ul, li {
       width: 50px;
       top: 16px;
       left: 20px;
-      z-index: 9999999; }
+      z-index: 9; }
       .login-form-icon-remove {
         float: right;
         left: 3px;
-        top: -80px;
+        top: -55px;
         font-size: 20px;
         color: transparent;
         width: 30px;
@@ -196,7 +224,7 @@ ul, li {
       width: 100px;
       border-bottom: 1px solid #1b2a3e;
       display: block;
-      margin: 30px auto auto auto; }
+      margin: 30px auto 50px auto; }
   .payment-type {
     margin: 0 0 30px 0; }
     @media (min-width: 0) and (max-width: 992px) {
@@ -262,7 +290,7 @@ ul, li {
       width: 100px;
       border-bottom: 1px solid #ffffff;
       display: block;
-      margin: 30px auto auto auto; }
+      margin: 30px auto 50px auto; }
   .opinions-holder {
     background-color: white;
     padding: 30px 20px 10px 20px;
@@ -318,7 +346,7 @@ ul, li {
       width: 100px;
       border-bottom: 1px solid #1b2a3e;
       display: block;
-      margin: 30px auto auto auto; }
+      margin: 30px auto 50px auto; }
   .tutorial-box-title {
     margin: 20px 0 10px 0; }
   .tutorial-box-paragraph {
@@ -357,7 +385,7 @@ ul, li {
       width: 100px;
       border-bottom: 1px solid #ffffff;
       display: block;
-      margin: 30px auto auto auto; }
+      margin: 30px auto 50px auto; }
   .why-item {
     margin: 0 0 50px 0; }
   .why-icon {
@@ -378,5 +406,65 @@ ul, li {
   padding: 100px 8% 120px 8%; }
 
 /*end of section:contact*/
+/*section:media-queries*/
+@media (min-width: 0) and (max-width: 500px) {
+  .payment-type {
+    width: 100%; } }
+@media (min-width: 0) and (max-width: 423px) {
+  .login-form {
+    width: auto; }
+    .login-form-button {
+      width: 320px;
+      margin: 0 auto; }
+
+  .input-label-one, .input-label-two {
+    max-width: 320px; }
+
+  .login-form-text, .login-form-password {
+    max-width: 85%; } }
+@media (min-width: 0) and (max-width: 343px) {
+  .input-label-one, .input-label-two {
+    max-width: 280px; }
+
+  .login-form-text, .login-form-password {
+    max-width: 85%; }
+
+  .login-form-button {
+    width: 280px; } }
+@media (max-width: 1200px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-left, .navbar-right {
+    float: none !important; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .collapse.in {
+    display: block !important; } }
+/*end of mediaqueries*/
 
 /*# sourceMappingURL=style.css.map */
