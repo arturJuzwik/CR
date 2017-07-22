@@ -1,0 +1,35 @@
+/*section:navigation*/
+.navigation{
+	padding:15px 0 15px 0;
+	margin:0 !important;
+	max-height: 80px;
+	background:white;
+	color:white;
+	z-index: 99;
+
+
+	&-ul>li>a{
+		color:black;
+		padding:15px 10px;
+		transition:all .5s ease;
+		text-transform: capitalize;
+		text-align: center;
+		&:hover,&:active{
+			background:#7c6e6e !important;
+			color:white !important;
+			
+		}
+	}
+
+}
+	.navbar-toggle{
+		border:2px solid black;
+		background:#1b2a3e;
+		.icon-bar{
+			background-color:white !important;
+		}
+	}
+#navbar-main{
+	background-color:white;
+}
+/*end of section: navigation*/

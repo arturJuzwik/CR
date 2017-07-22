@@ -30,6 +30,7 @@ ul,li{
 .row{
 	margin:0;
 }
+@import 'navigation.scss';
 @import 'login.scss';
 @import 'feature.scss';
 @import 'screens.scss';
@@ -38,3 +39,4 @@ ul,li{
 @import 'tutorial.scss';
 @import 'why.scss';
 @import 'contact.scss';
+@import 'mediaqueries.scss';
