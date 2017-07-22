@@ -11,3 +11,13 @@ $('#navbar-main a').on('click',function(event){
 		});
 	}
 });
+
+//navbar padding
+var navbar = document.querySelector('.navigation');
+
+window.addEventListener('scroll', function (){
+	if (window.pageYOffset > 80)
+		navbar.classList.add('navigation-js')
+	else
+		navbar.classList.remove('navigation-js')
+})
