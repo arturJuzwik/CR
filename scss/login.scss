@@ -31,13 +31,17 @@
 			left:20px;
 			z-index:9;
 			&-remove{
+				&-first,&-second{
 				float:right;
-				left:3px;
-				top:-55px;
+				left:0;
+				top:-65px;
 				font-size:20px;
-				color:transparent;
+				color:white;
+				opacity:0;
 				width:30px;
 				height:100%;
+					transition:all 1s ease;
+				}
 			}
 		}
 		&-text,&-password{
@@ -45,24 +49,24 @@
 			height:51px;
 			background:none;
 			padding:0 0 0 55px;
-			
 			border:none;
 			display:block;
 			margin:0 auto 0 10px;
 			position:relative;
 			top:-30px;
 			color:white;
-
-			}
-			&:focus{
-//				opacity:1;
+			opacity:1;
+				&:active,&:focus{
+				background-image:url('../img/input-background.jpg');
+				background-size:cover;
+				background-repeat:no-repeat;
 				outline:transparent;
-				background: rgb(27,42,62); /* Old browsers */
-            background: -webkit-linear-gradient(left, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
-            background: -o-linear-gradient(left, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
-            background: linear-gradient(to right, rgba(27,42,62,1) 14%, rgba(109,94,94,1) 51%, rgba(141,126,126,1) 89%);
-//				transition: opacity .5s ease;
-			}
+				opacity:.9;
+				transition:opacity 1s ease;
+				}
+		}
+		
+
 	&-links{
 			display:flex;
 			justify-content: center;
@@ -100,6 +104,12 @@
 		margin-bottom:70px !important;
 	}
 
+}
+.show{
+	opacity:1;
+}
+.hide{
+	display:none;
 }
 
 /*end of login section*/
