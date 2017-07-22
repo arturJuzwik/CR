@@ -23,14 +23,17 @@ ul, li {
   max-height: 80px;
   background: white;
   color: white;
-  z-index: 99; }
+  z-index: 99;
+  transition: padding .3s ease; }
+  .navigation-js {
+    padding: 0 !important; }
   .navigation-ul > li > a {
     color: black;
     padding: 15px 10px;
     transition: all .5s ease;
     text-transform: capitalize;
     text-align: center; }
-    .navigation-ul > li > a:hover, .navigation-ul > li > a:active {
+    .navigation-ul > li > a:hover, .navigation-ul > li > a:active, .navigation-ul > li > a:focus {
       background: #7c6e6e !important;
       color: white !important; }
 
@@ -42,6 +45,10 @@ ul, li {
 
 #navbar-main {
   background-color: white; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: inherit;
+  background-color: #9c8e8e; }
 
 /*end of section: navigation*/
 /*login section*/
