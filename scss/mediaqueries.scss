@@ -4,7 +4,6 @@
 		width:100%;
 	}
 	#free-account-button{
-		color:black !important;
 		margin: 0 15% 0 15% !important;
 	}
 }
@@ -113,8 +112,11 @@
 		background-color:white;
 	}
 	#free-account-button{
-		color:black !important;
+		color:white !important;
 		margin: 0 25% 0 25%;
+		&:hover{
+			color:#4aa3df;
+		}
 	}
 }
 /*end of mediaqueries*/
