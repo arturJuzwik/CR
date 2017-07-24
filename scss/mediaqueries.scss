@@ -3,6 +3,10 @@
 	.payment-type{
 		width:100%;
 	}
+	#free-account-button{
+		color:black !important;
+		margin: 0 15% 0 15% !important;
+	}
 }
 @media (min-width:0) and (max-width:423px){
 	.login{
@@ -12,6 +16,13 @@
 				width:320px;
 				margin:0 auto;
 			}
+		}
+	}
+	svg{
+		left:-40px;
+		width:250px;
+		>rect{
+			width:100px;
 		}
 	}
 	.input-label-one,.input-label-two,{
@@ -34,6 +45,22 @@
 		width:280px;
 	}
 }
+@media (max-width:992px){
+	.contact{
+		&-socials{
+			margin-bottom:30px;
+			
+		}
+		&-form{
+			&-input{
+				margin:0 auto 20px auto;
+			}
+			&-button{
+				margin:0 auto 30px auto;
+			}
+		}
+	}
+}
 @media (max-width: 1200px) {
   .navbar-header {
       float: none;
@@ -45,19 +72,23 @@
       display: block;
   }
   .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      border-top: none;
+ 		height:auto;
   }
   .navbar-fixed-top {
       top: 0;
-      border-width: 0 0 1px;
+      border-width: 0;
+	  	height:auto;
   }
   .navbar-collapse.collapse {
       display: none!important;
   }
+	.navbar-collapse.in{
+		overflow-y: visible !important;
+	}
   .navbar-nav {
       float: none!important;
-      margin-top: 7.5px;
+      margin-top: 0;
   }
   .navbar-nav>li {
       float: none;
@@ -65,10 +96,25 @@
   .navbar-nav>li>a {
       padding-top: 10px;
       padding-bottom: 10px;
+	  color:darkgrey !important;
   }
   .collapse.in{
       display:block !important;
   }
-}
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    box-shadow: none;
+}
+	#navbar-main{
+	margin-top:8px;	
+}
+	.nav{
+		background-color:white;
+	}
+	#free-account-button{
+		color:black !important;
+		margin: 0 25% 0 25%;
+	}
+}
 /*end of mediaqueries*/

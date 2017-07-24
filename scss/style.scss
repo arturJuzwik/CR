@@ -3,7 +3,7 @@ $border-color:#1B2B3B;
 /*end of variables*/
 /*mixins*/
 @mixin font-basic($size){
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: $size;
 	
 }
@@ -19,17 +19,29 @@ $border-color:#1B2B3B;
 /*end of mixins*/
 html,body{
 	@include font-basic(1em);
+	overflow-x:hidden;
 }
 ul,li{
 	list-style-type:none;
 	padding:0;
 	margin-bottom:0;
 }
+a:hover, a:focus{
+	text-decoration:none;
+}
+a:visited{
+	color:white;
+}
 /*bootstrap overwriting*/
 /*end of bootstrap overwriting*/
 .row{
 	margin:0;
 }
+@font-face{
+	font-family:fontello;
+	src:url('../fonts/fontello-c12b9ac7/font/fontello.woff');
+}
+@import '../css/fontello.css';
 @import 'navigation.scss';
 @import 'login.scss';
 @import 'feature.scss';
@@ -39,5 +51,5 @@ ul,li{
 @import 'tutorial.scss';
 @import 'why.scss';
 @import 'contact.scss';
-@import 'mediaqueries.scss';
-
+@import 'mediaqueries.scss','javascript.scss';
+ 

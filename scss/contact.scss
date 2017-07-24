@@ -1,5 +1,60 @@
 /*section:contact*/
+#contact{
+	background-color:#333333;
+}
 .contact{
-	padding:100px 8% 120px 8%;
+	padding:25px 8% 30px 8%;
+	&-socials{
+		display:flex;
+		justify-content:space-around;
+		align-self: flex-end;
+		margin-top:51.9px;
+		&-icon{
+			color:white;
+			font-size:40px;
+			&:hover{
+				color:white;
+			}
+		}
+	}	
+	&-form{
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		&-holder{
+			width:300px;
+			display: flex;
+			flex-direction: column;
+			
+		}
+		&-title{
+		color:white;
+		font-weight:300;
+		margin:0 0 10px 0;
+		}
+		&-input{
+			padding:8px 12px;
+			width:270px;
+			display:block;
+			margin:0 auto 20px 10px;
+		}
+		&-button{
+			margin:0 0 20px 10px;
+			width:135px;
+			padding:12px 24px;
+			text-transform: uppercase;
+			background:#4aa3df;
+			border:none;
+			color:white;
+			&:hover{
+				border:1px solid #4aa3df;
+				background:transparent;
+				color:#4aa3df;
+				transition:all .5s ease;
+			}
+		}
+	}
 }
 /*end of section:contact*/

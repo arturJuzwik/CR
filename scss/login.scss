@@ -2,7 +2,7 @@
 .login{
 	width: 100%;
 	min-height: 100vh;
-	background-image: url('../img/login-background.jpg');
+	background-image: url('https://cdn.pixabay.com/photo/2014/07/30/22/53/notebook-405755_960_720.jpg');
 	background-size: cover;
 	background-image: no-repeat;
 	@include section-padding;
@@ -22,59 +22,79 @@
 		width:400px;
 		
 		&-icon{
-			font-size:35px;
-			color:white;
 			display:inline-block;
 			position:relative;
 			width:50px;
-			top:16px;
-			left:20px;
+			bottom:-19px;
+			left:4px;
 			z-index:9;
-			&-remove{
-				&-first,&-second{
+			&-first{
+				top:27px;
+			}
+			>img{
+				width:40px;
+				height:40px;
+			}
+			&-show,&-remove{
+				width:30px;
+				height:20px;
 				float:right;
 				left:0;
-				top:-65px;
+				top:-50px;
 				font-size:20px;
 				color:white;
-				opacity:0;
-				width:30px;
-				height:100%;
-					transition:all 1s ease;
-				}
+				opacity:1;
+				transition:all 1s ease;
+				cursor:pointer;
 			}
 		}
+		
 		&-text,&-password{
 			width:350px;
 			height:51px;
 			background:none;
-			padding:0 0 0 55px;
+			padding:10px 0 0 39px;
 			border:none;
 			display:block;
 			margin:0 auto 0 10px;
 			position:relative;
-			top:-30px;
+			top:-22px;
 			color:white;
 			opacity:1;
+			&::-webkit-input-placeholder{
+						color:white;
+						font-weight:300;
+					}
+					&:-moz-placeholder{
+						color:white;
+						opacity:1;
+						font-weight:300;
+					}
+					&::-moz-placeholder{
+						color:white;
+						opacity:1;
+						font-weight:300;
+					}
+					&:-ms-input-placeholder{
+						color:white;
+						font-weight:300;
+					}
+					&::-ms-input-placeholder{
+						color:white;
+						font-weight:300;
+					}
 				&:active,&:focus{
-				background-image:url('../img/input-background.jpg');
-				background-size:cover;
-				background-repeat:no-repeat;
+
 				outline:transparent;
 				opacity:.9;
-				transition:opacity 1s ease;
+				transition:opacity .5s ease;
 				}
 		}
-		
-
-	&-links{
-			display:flex;
-			justify-content: center;
-			margin-bottom: 30px;
-			>a{
-				color:white;
-			}
-	}	
+		&-fgpassword{
+			display:block;
+			margin:20px auto;
+			color:white;
+		}
 	}
 		
 	
@@ -94,9 +114,18 @@
 	border-bottom:1px solid white;
 }
 
-.checkbox-label{
+.checkbox{
+	&-span{
+		display:inline-block;
+		position:relative;
+		left:36px;
+		top:-17px;
+		width:120px;
+	}
+	&-label{
 	height:30px !important;
 	color:white;
+	}
 	&-one{
 		margin-top:20px !important;
 	}
@@ -105,11 +134,67 @@
 	}
 
 }
-.show{
-	opacity:1;
+.checkbox-holder{
+
+	margin-bottom: 20px;
+
 }
-.hide{
-	display:none;
+input[type=checkbox]{
+	visibility: hidden;
 }
+/* SQUARED TWO */
+.squaredTwo {
+	width: 28px;
+	height: 28px;
+	background:transparent;
+	position: relative;
+	float:left;
+	margin-left:10px;
+}
+
+.squaredTwo label {
+	cursor: pointer;
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 4px;
+	top: 4px;
+	background:transparent;
+	border:2px solid white;
+}
+.squaredTwo label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	background: transparent;
+	top: 3px;
+	left: 2px;
+	border: 2px solid #fcfff4;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	transform: rotate(-50deg);
+}
+
+.squaredTwo label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.squaredTwo input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
 
 /*end of login section*/

@@ -1,40 +1,73 @@
 /*section:navigation*/
 .navigation{
-	padding:15px 0 15px 0;
+	padding:10px 0 10px 0;
 	margin:0 !important;
 	max-height: 80px;
-	background:white;
-	color:white;
 	z-index: 99;
 	transition:padding .3s ease;
-	&-js{
-		padding:0 !important;
-	}
 	&-ul>li>a{
-		color:black;
-		padding:15px 10px;
+		color:white;
+		padding:10px 10px;
 		transition:all .5s ease;
 		text-transform: capitalize;
 		text-align: center;
 		&:hover,&:active,&:focus{
-			background:#7c6e6e !important;
-			color:white !important;
+			background:inherit !important;
+			
 		}
 	}
 
 }
-	.navbar-toggle{
-		border:2px solid black;
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color:inherit;
+    background-color:#f6f6f6;
+	 opacity:0.5;
+}
+.navbar{
+	height:70px !important;
+	box-sizing:content-box;
+	background-color:transparent !important;
+	border-bottom:none;
+	&-toggle{
+		border:none;
+		border-radius:0;
 		background:#1b2a3e;
+		margin-top:18px;
 		.icon-bar{
 			background-color:white !important;
 		}
 	}
-#navbar-main{
-	background-color:white;
+	&-brand>svg{
+		width:200px;
+		height:80px;
+		position:relative;
+		top:-20px;
+
+	}
+	&-default .navbar-nav > li > a{
+		color:white;
+	}
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color:inherit;
-    background-color:#9c8e8e;
+#navbar-main{
+	margin-top:20px;
+	background-color:transparent !important;
+}
+#free-account-button{
+	border-radius:100px;
+	background-color:#4aa3df;
+	transition:background .5s ease;
+	&:hover{
+		color:#4aa3df;
+		background-color:white;
+		border:2px solid #4aa3df;
+		
+	}
+}
+//svg filler
+.filler{
+	fill: white !important;
+	
 }
 /*end of section: navigation*/
