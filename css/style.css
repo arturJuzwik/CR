@@ -75,9 +75,10 @@ a:visited {
 #free-account-button {
   border-radius: 100px;
   background-color: #4aa3df;
-  transition: background .5s ease; }
+  transition: background .5s ease;
+  color: white !important; }
   #free-account-button:hover {
-    color: #4aa3df;
+    color: #4aa3df !important;
     background-color: white;
     border: 2px solid #4aa3df; }
 
