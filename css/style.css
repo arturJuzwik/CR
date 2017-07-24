@@ -579,7 +579,6 @@ input[type=checkbox] {
     width: 100%; }
 
   #free-account-button {
-    color: black !important;
     margin: 0 15% 0 15% !important; } }
 @media (min-width: 0) and (max-width: 423px) {
   .login-form {
@@ -666,8 +665,10 @@ input[type=checkbox] {
     background-color: white; }
 
   #free-account-button {
-    color: black !important;
-    margin: 0 25% 0 25%; } }
+    color: white !important;
+    margin: 0 25% 0 25%; }
+    #free-account-button:hover {
+      color: #4aa3df; } }
 /*end of mediaqueries*/
 .show {
   opacity: 1; }
