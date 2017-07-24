@@ -25,7 +25,7 @@ if (window.pageYOffset > 80){
 		for (let i=0; i<svgPaths.length; i++){
 			svgPaths[i].classList.add('filler-black');
 		}
-		for (let i=1; i<a.length;i++){
+		for (let i=0; i<a.length;i++){
 			a[i].classList.add('li-js');
 		}
 
