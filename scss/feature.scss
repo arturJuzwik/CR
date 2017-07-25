@@ -1,6 +1,5 @@
 /*feature section*/
 .features{
-	margin: 0 1px 0 1px;
 	@include section-padding;
 }
 .feature{
@@ -10,11 +9,10 @@
 		@include inliner;
 		margin: 0 0 15px 0;
 		font-size: 50px;
-		color: #1b2a3e;
-		transition: color .5s linear;
+		color:$dark-blue;
+		transition: color .3s ease;
 		&:hover{
-			color: #6d5e5e;
-			transition: color .5s linear;
+			color:$main-blue;
 		}
 	}
 	&-title{
@@ -22,11 +20,13 @@
 		font-size:24px;
 		margin: 0 0 5px 0;
 		text-transform: capitalize;
+		color:$fcolor-white-background;
 	}
 	&-description{
 		@include inliner;
 		font-size: 16px;
 		margin:0 0 15px 0;
+		color:$fcolor-white-background;
 	}
 }
 /*end of feature section*/

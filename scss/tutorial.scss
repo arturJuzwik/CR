@@ -3,15 +3,17 @@
 	@include section-padding;
 	&-title{
 		@extend .payment-title;
+		color:$fcolor-white-background;
 	}
 	&-paragraph{
 		width:100%;
 		text-align:center;
 		margin:0 0 20px 0;
+		color:$fcolor-white-background;
 		&:after{
 			content:" ";
 			width:100px;
-			border-bottom:1px solid #1b2a3e;
+			border-bottom:1px solid $fcolor-white-background;
 			display:block;
 			margin: 30px auto 50px auto;
 		}
@@ -19,12 +21,13 @@
 	&-box{
 		&-title{
 			margin:20px 0 10px 0;
+			color:$fcolor-white-background;
 		}
 		&-paragraph{
 			font-size:14px;
 			line-height: 26px;
 			margin:0 0 20px 0;
-			
+			color:$fcolor-white-background;
 		}
 		&-number{
 			display:block;
@@ -33,8 +36,8 @@
 			left:10px;
 			bottom:30px;
 			font-size:90px;
-			opacity:0.1;
-			color:#1b2a3e;
+			opacity:0.15;
+			color:$dark-blue;
 		}
 	}
 }

@@ -5,6 +5,7 @@
 		width:100%;
 		text-align:center;
 		margin:0 0 20px 0;
+		color:$fcolor-white-background;
 	}
 	&-paragraph{
 		@extend .payment-title;
@@ -12,7 +13,7 @@
 		&:after{
 			content:" ";
 			width:100px;
-			border-bottom:1px solid #1b2a3e;
+			border-bottom:1px solid $fcolor-white-background;
 			display:block;
 			margin: 30px auto 50px auto;
 			
@@ -27,19 +28,20 @@
 		}
 		ul>li{
 		padding:0;	
-		border-bottom:1px solid #6d5e5e;
-		border-left:1px solid #6d5e5e;
-		border-right:1px solid #6d5e5e;
+		border-bottom:1px solid $dark-blue;
+		border-left:1px solid $dark-blue;
+		border-right:1px solid $dark-blue;
 		text-align: center;
 		line-height: 50px;
+		color:$fcolor-white-background;
 		}
 	}
 	&-cost{
 		width:100%;
 		height:160px;
-		background-color:#1b2a3e;
+		background-color:$dark-blue;
 		&-title{
-			color:white;
+			color:$fcolor-dark-background;
 			font-size:50px;
 			text-transform: uppercase;
 			margin:0;
@@ -50,7 +52,7 @@
 		&-description{
 			@include inliner;
 			text-transform: capitalize;
-			color:white;
+			color:$fcolor-dark-background;
 			margin:0;
 			font-size:24px;
 			font-weight: 300;
@@ -60,10 +62,11 @@
 	&-currency, &-period{
 		font-size:16px;
 		font-weight: 300;
+		color:$fcolor-dark-background;
 	}
 	&-holder{
 		height:100px;
-		background-color:#1b2a3e;
+		background-color:$dark-blue;
 		&-button{
 			display:block;
 			margin:0 auto;
@@ -71,9 +74,15 @@
 			top:25%;
 			width:50%;
 			height:50px;
-			border:1px solid black;
-			background:white;
+			border:2px solid $main-blue;
+			background:$main-blue;
+			color:$fcolor-dark-background;
 			text-transform: uppercase;
+			transition:all .3s ease;
+			&:hover{
+				color:$fcolor-white-background;
+				background:white;
+			}
 		}
 	}
 }

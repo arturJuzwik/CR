@@ -1,25 +1,27 @@
 /*section:why*/
 .why{
-	background-image:url("http://bootstraplovers.com/bootstrap4/saas2.0/html/assets/images/bg2.jpg");
+	background-image:url("../img/mac-2376101_1920.jpg");
 	min-height:500px;
 	background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-	padding:100px 8% 120px 8%;
+	padding:100px 0 120px 0;
 	color:white;
 	&-title{
 		@extend .payment-title;
 		font-size:35px;
+		color:$fcolor-dark-background;
 	}
 	&-paragraph{
 		width:100%;
 		text-align:center;
 		margin:0 0 20px 0;
+		color:$fcolor-dark-background;
 		&:after{
 			content:" ";
 			width:100px;
-			border-bottom:1px solid #ffffff;
+			border-bottom:1px solid $fcolor-dark-background;;
 			display:block;
 			margin: 30px auto 50px auto;
 		}
@@ -30,18 +32,20 @@
 	&-icon{
 		display:block;
 		float:left;
-
 		font-size:50px;
+		color:$fcolor-dark-background;
 	}
 
 	&-holder-title{
 		margin:0 0 15px 0;
 		padding-left:90px;
+		color:$fcolor-dark-background;
 	}
 	&-holder-paragraph{
 		padding-left:90px;
 		font-size:14px;
 		font-weight: 300;
+		color:$fcolor-dark-background;
 	}
 }
 /*end of section: why*/

@@ -16,6 +16,7 @@
 	&-description-title{
 		margin:50px 0 5px 0;
 		font-weight: bold;
+		color:$fcolor-white-background;
 		@media (min-width:0) and (max-width:1199px){
 			text-align: center;
 		}
@@ -23,7 +24,7 @@
 	&-description-paragraph{
 		margin:0 0 20px 0;
 		padding:5px;
-
+		color:$fcolor-white-background;
 		@media (min-width:0) and (max-width:1199px){
 			width:100%;
 		}
@@ -32,8 +33,10 @@
 		@extend .screens-description-paragraph;
 		padding:0;
 		height:50px;
+		color:$fcolor-white-background;
 		&-arrow{
-			color:#6d5e5e;
+			color:$dark-blue;
+			transition:all .3s ease;
 		}
 	}
 	&-screen{

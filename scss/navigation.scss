@@ -1,4 +1,8 @@
 /*section:navigation*/
+#navbar-main{
+	margin-top:15px;
+	background-color:transparent !important;
+}
 .navigation{
 	padding:10px 0 10px 0;
 	margin:0 !important;
@@ -6,10 +10,9 @@
 	z-index: 99;
 	transition:padding .3s ease;
 	&-ul>li>a{
-		color:white;
+		color:$fcolor-dark-background;
 		padding:10px 10px;
-		transition:all .5s ease;
-		text-transform: capitalize;
+		transition:all .3s ease; 
 		text-align: center;
 		&:hover,&:active,&:focus{
 			background:inherit !important;
@@ -18,7 +21,18 @@
 	}
 
 }
-
+#free-account-button{
+	background-color:#4aa3df;
+	border:2px solid #4aa3df;
+	transition:background .3s ease;
+	color:white !important;
+	&:hover{
+		color:$main-blue !important;
+		background-color:white;
+		border:2px solid #4aa3df;
+		
+	}
+}
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color:inherit;
@@ -30,45 +44,29 @@
 	box-sizing:content-box;
 	background-color:transparent !important;
 	border-bottom:none;
+	z-index: 200;
 	&-toggle{
 		border:none;
 		border-radius:0;
-		background:#1b2a3e;
+		background:black;
 		margin-top:18px;
 		.icon-bar{
 			background-color:white !important;
 		}
 	}
-	&-brand>svg{
-		width:200px;
-		height:80px;
+	&-brand>img{
+		width:120px;
+		height:60px;
 		position:relative;
-		top:-20px;
+		top:-10px;
 
 	}
 	&-default .navbar-nav > li > a{
 		color:white;
 	}
 }
-#navbar-main{
-	margin-top:20px;
-	background-color:transparent !important;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	color:$fcolor-dark-background;
 }
-#free-account-button{
-	border-radius:100px;
-	background-color:#4aa3df;
-	transition:background .5s ease;
-	color:white !important;
-	&:hover{
-		color:#4aa3df !important;
-		background-color:white;
-		border:2px solid #4aa3df;
-		
-	}
-}
-//svg filler
-.filler{
-	fill: white !important;
-	
-}
+
 /*end of section: navigation*/

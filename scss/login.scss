@@ -2,7 +2,7 @@
 .login{
 	width: 100%;
 	min-height: 100vh;
-	background-image: url('https://cdn.pixabay.com/photo/2014/07/30/22/53/notebook-405755_960_720.jpg');
+	background-image: url('../img/ipad-820272_1920.jpg');
 	background-size: cover;
 	background-image: no-repeat;
 	@include section-padding;
@@ -20,98 +20,157 @@
 		flex-direction: column;
 		align-content: center;
 		width:400px;
-		
-		&-icon{
-			display:inline-block;
-			position:relative;
-			width:50px;
-			bottom:-19px;
-			left:4px;
-			z-index:9;
-			&-first{
-				top:27px;
-			}
-			>img{
-				width:40px;
-				height:40px;
-			}
-			&-show,&-remove{
-				width:30px;
-				height:20px;
-				float:right;
-				left:0;
-				top:-50px;
-				font-size:20px;
-				color:white;
-				opacity:1;
-				transition:all 1s ease;
-				cursor:pointer;
-			}
-		}
-		
-		&-text,&-password{
-			width:350px;
-			height:51px;
-			background:none;
-			padding:10px 0 0 39px;
-			border:none;
-			display:block;
-			margin:0 auto 0 10px;
-			position:relative;
-			top:-22px;
-			color:white;
-			opacity:1;
-			&::-webkit-input-placeholder{
-						color:white;
-						font-weight:300;
-					}
-					&:-moz-placeholder{
-						color:white;
-						opacity:1;
-						font-weight:300;
-					}
-					&::-moz-placeholder{
-						color:white;
-						opacity:1;
-						font-weight:300;
-					}
-					&:-ms-input-placeholder{
-						color:white;
-						font-weight:300;
-					}
-					&::-ms-input-placeholder{
-						color:white;
-						font-weight:300;
-					}
-				&:active,&:focus{
-
-				outline:transparent;
-				opacity:.9;
-				transition:opacity .5s ease;
-				}
-		}
+		color:$fcolor-white-background;
 		&-fgpassword{
 			display:block;
 			margin:20px auto;
 			color:white;
 		}
-	}
-		
-	
-	&-form-button{
+		&-button{
 		height:70px;
 		background:none;
 		border:2px solid white;
 		font-size:24px;
 		color:white;
+		transition:all 0.3s ease;
+		&:hover{
+			background:white;
+			color:$fcolor-white-background;
+			}
+		}	
+	}
+}
+.return-arrow{
+	width:40px;
+	height:40px;
+	background:$main-blue;
+	display:block;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	>i{
+		text-align: center;
+		font-size:30px;
+		line-height: 40px;
+		left:6px;
 	}
 }
 
-
-.input-label-one,.input-label-two{
-	height:70px !important;
-	margin-bottom:30px;
-	border-bottom:1px solid white;
+		
+	
+	
+.login-icon{
+	display:inline-block;
+	position:relative;
+	width:40px;
+	height:40px;
+	z-index:99;
+	top:39px;
+	left:7px;
+}
+.group{
+	position:relative;
+	top:-35px;
+	margin-bottom:15px;
+	input{
+		font-size:18px;
+		padding:10px 10px 5px 50px;
+		display:block;
+		width:100%;
+		height:50px;
+		border:none;
+		border-bottom:2px solid white;
+		background:transparent;
+		color:white;
+		&:focus{
+			outline:transparent;
+			~ label, input:valid ~ label{
+				top:20px;
+				font-size:14px;
+				color:$main-blue;
+			}
+		}
+	}
+	.bar{
+		position:relative;
+		display:block;
+		width:100%;
+		&:before,&:after{
+			content: " ";
+			height:3px;
+			width:0;
+			bottom:0;
+			position:absolute;
+			background:$main-blue;
+			transition:all .3s ease;
+			-moz-transition:all .3s ease;
+			-webkit-transition:all .3s ease;
+		}
+		&:before{
+			left:50%;
+		}
+		&:after{
+			right:50%;
+		}
+	}
+	>label{
+		color:#f0f0f0;
+		font-size:18px;
+		font-weight:normal;
+		position:absolute;
+		pointer-events: none;
+		left:53px;
+		top:55px;
+		transition:all .3s ease;
+		-moz-transition:all .3s ease;
+		-webkit-transition:all .3s ease;
+	}
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+.highlight{
+	position:absolute;
+	height:60%;
+	width:100px;
+	top:25%;
+	left:0;
+	pointer-events: none;
+	opacity:0.5;
+	
+}
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.login-remove,.login-show{
+	display:inline-block;
+	position:relative;
+	float:right;
+	width:22px;
+	height:22px;
+	
+}
+.login-remove{
+	top:-35px;
+	right:5px;
+}
+.login-show{
+	top:-35px;
+	right:5px;
 }
 
 .checkbox{
@@ -135,8 +194,7 @@
 
 }
 .checkbox-holder{
-
-	margin-bottom: 20px;
+	margin:-40px 0 25px 0;
 
 }
 input[type=checkbox]{

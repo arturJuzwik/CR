@@ -1,5 +1,9 @@
 /*variables*/
 $border-color:#1B2B3B;
+$main-blue:#4aa3df;
+$dark-blue:#1b4d6e;
+$fcolor-white-background:#727272;
+$fcolor-dark-background:#FAFAFA;
 /*end of variables*/
 /*mixins*/
 @mixin font-basic($size){
@@ -21,6 +25,7 @@ html,body{
 	@include font-basic(1em);
 	overflow-x:hidden;
 }
+
 ul,li{
 	list-style-type:none;
 	padding:0;
@@ -34,9 +39,22 @@ a:visited{
 }
 /*bootstrap overwriting*/
 /*end of bootstrap overwriting*/
-.row{
-	margin:0;
+.body-animation{
+	opacity:0;
+	animation: body-animation 1s forwards;
+	@keyframes body-animation{
+		0%{
+			opacity:0;
+		}
+		25%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	}
 }
+
 @font-face{
 	font-family:fontello;
 	src:url('../fonts/fontello-c12b9ac7/font/fontello.woff');

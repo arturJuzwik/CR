@@ -17,37 +17,21 @@
 			}
 		}
 	}
-	svg{
-		left:-40px;
-		width:250px;
-		>rect{
-			width:100px;
-		}
-	}
-	.input-label-one,.input-label-two,{
-		max-width:320px;
-		
-	}
-	.login-form-text,.login-form-password{
-		max-width:85%;
-	}
 }
+
 @media (min-width:0) and (max-width:343px){
-	.input-label-one,.input-label-two,{
-		max-width:280px;
-		
-	}
-	.login-form-text,.login-form-password{
-		max-width:85%;
-	}
 	.login-form-button{
 		width:280px;
 	}
 }
 @media (max-width:992px){
 	.contact{
+		ul{
+			margin:20px 0 30px 0;
+		}
 		&-socials{
-			margin-bottom:30px;
+			margin-bottom:10px;
+			justify-content: space-between;
 			
 		}
 		&-form{
@@ -95,7 +79,7 @@
   .navbar-nav>li>a {
       padding-top: 10px;
       padding-bottom: 10px;
-	  color:darkgrey !important;
+	  color:$fcolor-white-background !important;
   }
   .collapse.in{
       display:block !important;
@@ -114,8 +98,9 @@
 	#free-account-button{
 		color:white !important;
 		margin: 0 25% 0 25%;
+		transition: all .3s ease !important;
 		&:hover{
-			color:#4aa3df;
+			color:#4aa3df !important;
 		}
 	}
 }
