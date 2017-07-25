@@ -10,7 +10,7 @@ const navbar = document.querySelector('.navigation'),
 
 window.addEventListener('load',function(){
 	if(window.pageYOffset<80){
-		imgLogo.src ="img/PointCRM.png";
+		imgLogo.src ="img/PointCRM.PNG";
 	}
 });
 
@@ -28,7 +28,7 @@ if (window.pageYOffset > 80){
 			a[i].classList.add('li-js');
 		}
 }else{
-	imgLogo.src ="img/PointCRM.png";
+	imgLogo.src ="img/PointCRM.PNG";
 	navbar.classList.remove('navigation-js')
 	document.getElementById('login').removeChild(div);
 		for(var i=0; i<a.length;i++){
