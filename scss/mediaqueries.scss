@@ -3,9 +3,7 @@
 	.payment-type{
 		width:100%;
 	}
-	#free-account-button{
-		margin: 0 15% 0 15% !important;
-	}
+
 }
 @media (min-width:0) and (max-width:423px){
 	.login{
@@ -70,16 +68,20 @@
 		overflow-y: visible !important;
 	}
   .navbar-nav {
-      float: none!important;
-      margin-top: 0;
+    float: none !important;
+    margin-top: 0;
+    
+    width: 90%;
+    margin: 0 auto;
   }
   .navbar-nav>li {
-      float: none;
+      float: left;
+	  	width:90%;
+		margin:0 auto;
   }
   .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-	  color:$fcolor-white-background !important;
+      padding: 15px 0 15px 20px;
+	  color:white;
   }
   .collapse.in{
       display:block !important;
@@ -93,11 +95,12 @@
 	margin-top:8px;	
 }
 	.nav{
-		background-color:white;
+		background-color:#333;
 	}
 	#free-account-button{
 		color:white !important;
-		margin: 0 25% 0 25%;
+		margin-top:10px;
+		width:200px;
 		transition: all .3s ease !important;
 		&:hover{
 			color:#4aa3df !important;

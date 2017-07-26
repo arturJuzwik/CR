@@ -6,9 +6,10 @@ $fcolor-white-background:#727272;
 $fcolor-dark-background:#FAFAFA;
 /*end of variables*/
 /*mixins*/
+
 @mixin font-basic($size){
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: $size;
+	font-size: 17px;
 	
 }
 @mixin inliner{

@@ -11,15 +11,19 @@
 	transition:padding .3s ease;
 	&-ul>li>a{
 		color:$fcolor-dark-background;
-		padding:10px 10px;
+		padding:8.5px 14.5px;
 		transition:all .3s ease; 
-		text-align: center;
+		text-align: left;
+		font-weight: 300;
 		&:hover,&:active,&:focus{
 			background:inherit !important;
+		
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
 			
-		}
+		
 	}
 
+}
 }
 #free-account-button{
 	background-color:#4aa3df;
@@ -48,10 +52,10 @@
 	&-toggle{
 		border:none;
 		border-radius:0;
-		background:black;
+		background:$main-blue;
 		margin-top:18px;
 		.icon-bar{
-			background-color:white !important;
+			background-color:black !important;
 		}
 	}
 	&-brand>img{

@@ -2,18 +2,20 @@
 .login{
 	width: 100%;
 	min-height: 100vh;
-	background-image: url('../img/ipad-820272_1920.jpg');
+	background-image: url('../img/bg1.jpg') ;
 	background-size: cover;
-	background-image: no-repeat;
+	
 	@include section-padding;
 	display:flex;
 	justify-content:center;
+	padding-bottom:100px;
 	&-title{
-		margin:50px 0 50px 0;
+		margin:85px 0 55px 0;
 		text-align: center;
 		color:white;
-		font-size:40px;
+		font-size:32px;
 		text-transform: uppercase;
+		font-weight: 300;
 	}
 	&-form{
 		display:flex;
@@ -23,7 +25,7 @@
 		color:$fcolor-white-background;
 		&-fgpassword{
 			display:block;
-			margin:20px auto;
+			margin:30px auto;
 			color:white;
 		}
 		&-button{
@@ -71,7 +73,7 @@
 .group{
 	position:relative;
 	top:-35px;
-	margin-bottom:15px;
+	margin-bottom:5px;
 	input{
 		font-size:18px;
 		padding:10px 10px 5px 50px;
@@ -139,6 +141,14 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	opacity:0.5;
 	
 }
+.login-form-text:focus ~ label,
+.login-form-password:focus ~ label,
+.login-form-text:valid ~ label,
+.login-form-password:valid ~ label{
+  top:20px;
+  font-size:14px;
+  color:$main-blue;
+}
 input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
@@ -194,7 +204,7 @@ input:focus ~ .highlight {
 
 }
 .checkbox-holder{
-	margin:-40px 0 25px 0;
+	margin:-15px 0 50px 0;
 
 }
 input[type=checkbox]{
@@ -221,7 +231,6 @@ input[type=checkbox]{
 	border:2px solid white;
 }
 .squaredTwo label:after {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
 	content: '';
@@ -243,13 +252,11 @@ input[type=checkbox]{
 }
 
 .squaredTwo label:hover::after {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 	filter: alpha(opacity=30);
 	opacity: 0.3;
 }
 
 .squaredTwo input[type=checkbox]:checked + label:after {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
 }
