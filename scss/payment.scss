@@ -6,9 +6,11 @@
 		text-align:center;
 		margin:0 0 20px 0;
 		color:$fcolor-white-background;
+		font-size:35px;
 	}
 	&-paragraph{
-		@extend .payment-title;
+		width:100%;
+		text-align:center;
 		margin:0 0 50px 0;
 		&:after{
 			content:" ";
@@ -42,11 +44,12 @@
 		background-color:$dark-blue;
 		&-title{
 			color:$fcolor-dark-background;
-			font-size:50px;
+			font-size:46px;
+			font-weight: 300;
 			text-transform: uppercase;
 			margin:0;
 			text-align: center;
-			padding:25px 0 15px 0;
+			padding:25px 0 25px 0;
 
 		}
 		&-description{
@@ -56,13 +59,15 @@
 			margin:0;
 			font-size:24px;
 			font-weight: 300;
+			opacity:0.8;
 			
 		}
 	}
 	&-currency, &-period{
-		font-size:16px;
+		font-size:12px;
 		font-weight: 300;
 		color:$fcolor-dark-background;
+		text-transform: lowercase;
 	}
 	&-holder{
 		height:100px;
@@ -82,6 +87,7 @@
 			&:hover{
 				color:$fcolor-white-background;
 				background:white;
+				border:none;
 			}
 		}
 	}

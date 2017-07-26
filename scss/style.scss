@@ -25,6 +25,7 @@ $fcolor-dark-background:#FAFAFA;
 html,body{
 	@include font-basic(1em);
 	overflow-x:hidden;
+	letter-spacing: .5px;
 }
 
 ul,li{
@@ -69,6 +70,7 @@ a:visited{
 @import 'opinions.scss';
 @import 'tutorial.scss';
 @import 'why.scss';
+@import 'free.scss';
 @import 'contact.scss';
 @import 'mediaqueries.scss','javascript.scss';
  
