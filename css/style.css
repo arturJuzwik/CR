@@ -85,10 +85,10 @@ a:visited {
     .navbar-toggle .icon-bar {
       background-color: black !important; }
   .navbar-brand > img {
-    width: 120px;
-    height: 60px;
+    width: 270px;
+    height: 35px;
     position: relative;
-    top: -10px; }
+    top: 0px; }
   .navbar-default .navbar-nav > li > a {
     color: white; }
 
@@ -747,7 +747,12 @@ input[type=checkbox] {
 /*section:media-queries*/
 @media (min-width: 0) and (max-width: 500px) {
   .payment-type {
-    width: 100%; } }
+    width: 100%; }
+
+  .navbar-brand > img {
+    width: 135px;
+    height: 17.5px;
+    top: 11px; } }
 @media (min-width: 0) and (max-width: 423px) {
   .login-form {
     width: auto; }
