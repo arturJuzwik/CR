@@ -8,7 +8,8 @@ const navbar = document.querySelector('.navigation'),
 		freeAccount = document.getElementById('free-account-button'),
 		body = document.querySelector('body'),
 		nav = document.querySelector('.nav'),
-		navbarContainer = document.querySelector('.navbar container');
+		navbarContainer = document.querySelector('.navbar container'),
+		returnArrow = document.querySelector('.return-arrow');
 
 
 window.addEventListener('load',function(){
@@ -62,7 +63,13 @@ window.addEventListener('resize',function(){
 	}
 })
 
-
+window.addEventListener('scroll',function(){
+	if(window.pageYOffset<80){
+		returnArrow.style.display = "none";
+	}else{
+		returnArrow.style.display = "block";
+	}
+})
 //show password
 const showButton = document.querySelector('.login-show'),
 		inputPassword = document.querySelector('.login-form-password');
@@ -102,8 +109,17 @@ $('#navbar-main a').on('click',function(event){
 		var hash = this.hash;
 		$('html,body').animate({
 			scrollTop: $(hash).offset().top
-		},1000,function(){
+		},500,function(){
 			window.location.hash = hash;
 		});
 	}
 });
+$('.return-arrow').on('click',function(event){
+	var hash = this.hash;
+	$('html,body').animate({
+			scrollTop: $(hash).offset().top
+		},500,function(){
+			window.location.hash = hash;
+		});
+	
+})
