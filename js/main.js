@@ -6,40 +6,61 @@ const navbar = document.querySelector('.navigation'),
 		imgLogo = document.querySelector('.navbar-brand img'),
 		navbarCollapse = document.querySelector('.navbar-collapse'),
 		freeAccount = document.getElementById('free-account-button'),
-		div = document.createElement('div');
+		body = document.querySelector('body'),
+		nav = document.querySelector('.nav'),
+		navbarContainer = document.querySelector('.navbar container');
+
 
 window.addEventListener('load',function(){
-	if(window.pageYOffset<80){
+	if(window.pageYOffset<40){
 		imgLogo.src ="img/PointCRM.PNG";
 	}
 });
 
 
 window.addEventListener('scroll', function (){
-
-
-		
-if (window.pageYOffset > 80){
-	imgLogo.src ="img/PointCRM-czarne.png";
-	navbar.classList.add('navigation-js');
-	div.innerHTML = '<a class="return-arrow" href="#login"><i class="glyphicon glyphicon-chevron-up"></i></a>'
-	document.getElementById('login').appendChild(div);
+if (window.innerWidth > 1200)  {
+	if (window.pageYOffset < 80){
+		imgLogo.src ="img/PointCRM.png";
+		navbar.classList.remove('navigation-js');
 		for (let i=0; i<a.length;i++){
-			a[i].classList.add('li-js');
+			a[i].style.color = "white";
 		}
+	}else{
+		imgLogo.src ="img/PointCRM-czarne.png";
+		navbar.classList.add('navigation-js');
+		for (let i=0; i<a.length;i++){
+			a[i].style.color = "black";
+		}
+	}
 }else{
-	imgLogo.src ="img/PointCRM.PNG";
-	navbar.classList.remove('navigation-js')
-	document.getElementById('login').removeChild(div);
-		for(var i=0; i<a.length;i++){
-			a[i].classList.remove('li-js');
-			
- 		}
+	if (window.pageYOffset < 80){
+		imgLogo.src ="img/PointCRM.png";
+		navbar.classList.remove('navigation-js');
+		nav.classList.remove('navigation-small');
+		for (let i=0; i<a.length;i++){
+			a[i].style.color = "white";
+		}
+	}else{
+		imgLogo.src ="img/PointCRM-czarne.png";
+		navbar.classList.add('navigation-js');
+		nav.classList.add('navigation-small');
+		for (let i=0; i<a.length;i++){
+			a[i].style.color = "black";
+		}
+	}
 }
-
-			
 });
 
+window.addEventListener('resize',function(){
+	if(window.innerHeight<1200){
+		if(pageYOffset>80){
+			nav.classList.add('navigation-small');
+		}else{
+			nav.classList.remove('navigation-small');
+		}
+	}
+})
 
 
 //show password
