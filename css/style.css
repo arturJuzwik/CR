@@ -6,7 +6,8 @@
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 17px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  letter-spacing: .5px; }
 
 ul, li {
   list-style-type: none;
@@ -105,19 +106,32 @@ a:visited {
   display: flex;
   justify-content: center;
   padding-bottom: 100px; }
-  .login-title {
-    margin: 85px 0 55px 0;
+  .login-title-main {
     text-align: center;
     color: white;
     font-size: 32px;
-    text-transform: uppercase;
+    font-weight: 300;
+    margin: 90px 0 25px 0;
+    max-width: 927px; }
+  .login-paragraph-main {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 300; }
+  .login-title {
+    margin: 85px 0 30px 0;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    text-transform: lowercase;
     font-weight: 300; }
   .login-form {
     display: flex;
     flex-direction: column;
     align-content: center;
     width: 400px;
-    color: #727272; }
+    color: #727272;
+    margin: 0 auto; }
     .login-form-fgpassword {
       display: block;
       margin: 30px auto;
@@ -137,7 +151,7 @@ a:visited {
   width: 40px;
   height: 40px;
   background: #4aa3df;
-  display: block;
+  display: none;
   position: fixed;
   right: 10px;
   bottom: 10px; }
@@ -341,26 +355,29 @@ input[type=checkbox] {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 0 0 15px 0;
-    font-size: 50px;
-    color: #1b4d6e;
+    margin: 0 0 25px 0;
+    font-size: 40px;
+    color: #4aa3df;
     transition: color .3s ease; }
     .feature-icon:hover {
-      color: #4aa3df; }
+      color: #1b4d6e; }
   .feature-title {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 24px;
-    margin: 0 0 5px 0;
+    font-size: 21px;
+    margin: 0 0 6px 0;
     text-transform: capitalize;
+    font-weight: 300;
     color: #727272; }
   .feature-description {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 35px;
     margin: 0 0 15px 0;
+    font-family: 'Open sans', sans-serif;
     color: #727272; }
 
 /*end of feature section*/
@@ -421,12 +438,15 @@ input[type=checkbox] {
 /*section:payment*/
 .payment {
   padding: 90px 0 60px 0; }
-  .payment-title, .payment-paragraph, .opinions-title, .opinions-paragraph, .tutorial-title, .why-title {
+  .payment-title, .opinions-title, .opinions-paragraph, .tutorial-title, .why-title {
     width: 100%;
     text-align: center;
     margin: 0 0 20px 0;
-    color: #727272; }
+    color: #727272;
+    font-size: 35px; }
   .payment-paragraph {
+    width: 100%;
+    text-align: center;
     margin: 0 0 50px 0; }
     .payment-paragraph:after {
       content: " ";
@@ -455,11 +475,12 @@ input[type=checkbox] {
     background-color: #1b4d6e; }
     .payment-cost-title {
       color: #FAFAFA;
-      font-size: 50px;
+      font-size: 46px;
+      font-weight: 300;
       text-transform: uppercase;
       margin: 0;
       text-align: center;
-      padding: 25px 0 15px 0; }
+      padding: 25px 0 25px 0; }
     .payment-cost-description {
       display: inline-block;
       width: 100%;
@@ -468,11 +489,13 @@ input[type=checkbox] {
       color: #FAFAFA;
       margin: 0;
       font-size: 24px;
-      font-weight: 300; }
+      font-weight: 300;
+      opacity: 0.8; }
   .payment-currency, .payment-period {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
-    color: #FAFAFA; }
+    color: #FAFAFA;
+    text-transform: lowercase; }
   .payment-holder {
     height: 100px;
     background-color: #1b4d6e; }
@@ -490,7 +513,8 @@ input[type=checkbox] {
       transition: all .3s ease; }
       .payment-holder-button:hover {
         color: #727272;
-        background: white; }
+        background: white;
+        border: none; }
 
 /*end of section:payment*/
 /*section:opinions*/
@@ -628,6 +652,38 @@ input[type=checkbox] {
     color: #FAFAFA; }
 
 /*end of section: why*/
+/*section:free*/
+.free {
+  padding: 90px 0 60px 0;
+  background: #1b4d6e; }
+  .free-title {
+    color: white;
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 35px;
+    font-weight: 300; }
+  .free-paragraph {
+    color: white;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-size: 14px;
+    font-weight: normal; }
+  .free-href {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border: 2px solid white;
+    padding: 8px 16px;
+    width: 115px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .3s ease;
+    letter-spacing: 1px; }
+    .free-href:hover {
+      background: white;
+      color: #727272; }
+
+/*end of section: free*/
 /*section:contact*/
 #contact {
   background-color: #333333; }
