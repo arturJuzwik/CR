@@ -14,7 +14,7 @@ const navbar = document.querySelector('.navigation'),
 
 window.addEventListener('load',function(){
 	if(window.pageYOffset<40){
-		imgLogo.src ="img/PointCRM.PNG";
+		imgLogo.src ="img/PointCRM.png";
 	}
 });
 
